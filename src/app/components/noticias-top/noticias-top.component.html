@@ -1,0 +1,27 @@
+<div class="container">
+
+
+  <app-reloj-tech></app-reloj-tech>
+  <app-spinner *ngIf="loading"></app-spinner>
+  <img src="./assets/anuncio1.png" alt="" *ngIf="anuncio">
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Div del relojito -->
+    
+  
+    <!-- Bucle para las noticias -->
+    <div *ngFor="let noticias of topheadDisplay" class="col">
+      <div class="card">
+        <img [src]="noticias.urlToImage" class="card-img-top" alt="..." width="auto" height="251px">
+        <div class="card-body">
+          <span class="badge bg-primary mb-1" style="background-color: #DB3F37;"> {{noticias.source.name}} </span>
+          <h5 class="card-title"> {{noticias.title}} </h5>
+          <p class="card-text"> {{noticias.descripcion}} </p>
+          <a [href]="noticias.url" target="_blank" class="btn btn-primary btn-block" style="background-color: #DB3F37;">Ver Noticia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  

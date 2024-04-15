@@ -1,6 +1,23 @@
-<app-navbar></app-navbar>
+<app-navbar (rutaSeleccionada)="ocultarFormulario()"></app-navbar>
+
+
 <div class="container">
+
   <app-formulario (parametrosSeleccionados)="buscarNoticias($event)"></app-formulario>
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" >
+    
+  </section>
+
+  <app-spinner *ngIf="loading"></app-spinner>
+
+  <app-reloj *ngIf="reloj"></app-reloj>
+
+  
+  
   <app-listado-noticias [listNoticias]="listNoticias"></app-listado-noticias>
+  
 </div>
+
+
+
 <app-footer></app-footer>

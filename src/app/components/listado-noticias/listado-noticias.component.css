@@ -1,5 +1,15 @@
-img{
-    height: 250px;
-    width: 635px;
-    object-fit: cover;
+img {
+
+    object-fit: cover; /* La imagen se ajustará para cubrir el contenedor */
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
 }
+
+.card{
+    width: auto; /* La anchura se ajustará automáticamente para mantener la proporción original */
+    height: 450px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* La imagen se ajustará para cubrir el contenedor */
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+
+
+}
+

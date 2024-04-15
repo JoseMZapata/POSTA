@@ -7,5 +7,7 @@ import { Component,Input } from '@angular/core';
 })
 export class ListadoNoticiasComponent {
   @Input() listNoticias: any;
+  
+
 
 }

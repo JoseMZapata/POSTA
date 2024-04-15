@@ -10,6 +10,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { RelojComponent } from './components/reloj/reloj.component';
+import { NoticiasTopComponent } from './components/noticias-top/noticias-top.component';
+import { NoticiasTechComponent } from './components/noticias-salud/noticias-tech.component';
+import { RelojTechComponent } from './components/reloj-tech/reloj-tech.component';
+import { CaruselComponent } from './components/carusel/carusel.component';
+import { RelojSaluComponent } from './components/reloj-salu/reloj-salu.component';
+import { NoticiasDeporComponent } from './components/noticias-depor/noticias-depor.component';
+import { NoticiasCienciaComponent } from './components/noticias-ciencia/noticias-ciencia.component';
+import { RelojDeporComponent } from './components/reloj-depor/reloj-depor.component';
+import { RelojCienciaComponent } from './components/reloj-ciencia/reloj-ciencia.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +29,16 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     SpinnerComponent,
     FooterComponent,
+    RelojComponent,
+    NoticiasTopComponent,
+    NoticiasTechComponent,
+    RelojTechComponent,
+    CaruselComponent,
+    RelojSaluComponent,
+    NoticiasDeporComponent,
+    NoticiasCienciaComponent,
+    RelojDeporComponent,
+    RelojCienciaComponent,
   ],
   imports: [
     BrowserModule,

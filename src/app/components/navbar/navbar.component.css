@@ -1,0 +1,11 @@
+.logos-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0 40px; /* Añade un relleno horizontal para separar los logos de los bordes */
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
