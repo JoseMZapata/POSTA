@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms'
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
@@ -20,6 +19,8 @@ import { NoticiasDeporComponent } from './components/noticias-depor/noticias-dep
 import { NoticiasCienciaComponent } from './components/noticias-ciencia/noticias-ciencia.component';
 import { RelojDeporComponent } from './components/reloj-depor/reloj-depor.component';
 import { RelojCienciaComponent } from './components/reloj-ciencia/reloj-ciencia.component';
+import { MicroSentryModule } from '@micro-sentry/angular';
+
 
 @NgModule({
   declarations: [
@@ -44,10 +45,17 @@ import { RelojCienciaComponent } from './components/reloj-ciencia/reloj-ciencia.
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MicroSentryModule.forRoot({
+      dsn: "https://4b0c25221ff24da3a11547878a6013a8@app.glitchtip.com/7276",
+      environment: "production",
+      release: "1.0.0"
+
+    }),
   ],
   providers: [
     provideClientHydration()
+    
   ],
   bootstrap: [AppComponent]
 })

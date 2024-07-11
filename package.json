@@ -21,8 +21,13 @@
     "@angular/platform-server": "^17.2.0",
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.0",
+    "@micro-sentry/angular": "^7.1.0",
+    "@micro-sentry/breadcrumbs-plugin": "^1.1.0",
+    "@sentry/angular-ivy": "^7.114.0",
+    "@sentry/tracing": "^7.114.0",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
+    "sentry-sdk": "^0.1.3",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
